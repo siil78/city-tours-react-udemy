@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import './App.scss';
+import "@fortawesome/fontawesome-free/css/all.min.css"
+import Navbar from './components/Navbar/Navbar'
+//alternativní import pomocí souboru index.js v adresáři Tourlist
+//stačí zadat jen cestu k adresáři
+import Tourlist from './components/TourList'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return(
+      <>
+        <Navbar/>
+        <Tourlist/>
+      </>
+    )
+  }
 }
 
 export default App;

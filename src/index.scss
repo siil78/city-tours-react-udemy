@@ -1,0 +1,19 @@
+
+//VARIABLES
+$mainBlack: #222;
+$mainGreen: #82b340;
+$mainWhite: #fff;
+$mainGrey: #ececec;
+$mainTransition: all 0.3s linear;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: $mainWhite;
+  color: $mainBlack;
+}
